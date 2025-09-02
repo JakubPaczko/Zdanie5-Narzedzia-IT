@@ -1,0 +1,14 @@
+name: Workflow z warunkiem
+
+on:
+  push:
+    paths:
+      - 'src/**'
+
+jobs:
+  conditional-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Wypisz informację
+        run: echo "Zmiana w katalogu src — uruchamiam workflow!"
